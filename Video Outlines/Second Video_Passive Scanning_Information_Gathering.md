@@ -20,11 +20,11 @@ created: 2023-04-22 22:43:05Z
 
 # **Scanning and Enumeration**
 ## **Nmap:**
-- nmap -sn 172.21.10.0/24
+- nmap -sn 10.21.10.0/24
 
 ## **NetDiscover (ARP Scanning):**
 - netdiscover -i eth0
-- netdiscover -r 172.21.10.0/24
+- netdiscover -r 10.21.10.0/24
 
 ## **Nmap**
 - **Important flags**
@@ -35,7 +35,7 @@ created: 2023-04-22 22:43:05Z
 	- O - operating system information
 - **Scan**
 	- **Standard Scan example**
-		- nmap -sn 172.21.10.0/24
+		- nmap -sn 10.21.10.0/24
 	- **Scan for Nmap --tailored script --interrogate for service version info --interrogate for OS info --output to XML**
 		- nmap -sC -sV -O -oX
 	- **Nmap port 80 - IP - Pipe to Nikto for scan** 

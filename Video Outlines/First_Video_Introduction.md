@@ -1,4 +1,10 @@
-- ## **Introduction
+---
+title: '1. First Video: Indroduction'
+updated: 2023-04-23 00:02:25Z
+created: 2023-04-22 22:43:05Z
+---
+
+- ## **Introduction**
 	- Ethan Page
 	- Introductory Pentesting
 - **Notetaking**

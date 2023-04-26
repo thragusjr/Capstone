@@ -1,4 +1,5 @@
-title: '3. Third Video: Active Scanning & Enumeration'
+---
+Title: '3. Third Video: Active Scanning & Enumeration'
 updated: 2023-04-23 00:15:16Z
 created: 2023-04-22 20:54:50Z
 ---

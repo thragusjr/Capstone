@@ -18,7 +18,7 @@ created: 2023-04-22 22:43:05Z
 	- [OSINT Framework](https://osintframework.com/)
 
 
-# **Scanning and Enumeration**
+# **Recon Scanning**
 ## **Nmap:**
 - nmap -sn 10.21.10.0/24
 

@@ -1,37 +1,33 @@
  ## **Tool overview:**
-- **Options**:
-  **-h, --help**         Show this help message and exit
-  **-d DOMAIN, --domain DOMAIN**
-                          Target domain.
-  **-n NS_SERVER, --name_server NS_SERVER**
-                          Domain server to use. If none is given, the SOA of the target will be used. Multiple servers can be specified using a comma    separated list.
-  **-r RANGE, --range RANGE**
-                          IP range for reverse lookup brute force in formats   (first-last) or in (range/bitmask).
-  **-D DICTIONARY, --dictionary DICTIONARY**
-                         Dictionary file of subdomain and hostnames to use for brute force.
-  **-f**                     Filter out of brute force domain lookup, records that resolve to the wildcard defined IP address when saving records.
-  **-a**                    Perform AXFR with standard enumeration.
-  **-s**                    Perform a reverse lookup of IPv4 ranges in the SPF record with standard enumeration.
-  **-b**                    Perform Bing enumeration with standard enumeration.
-  **-y**                    Perform Yandex enumeration with standard enumeration.
-  **-k**                    Perform crt.sh enumeration with standard enumeration.
-  **-w**                   Perform deep whois record analysis and reverse lookup of IP ranges found through Whois when doing a standard enumeration.
-  **-z**                    Performs a DNSSEC zone walk with standard enumeration.
-  **--threads THREADS**  Number of threads to use in reverse lookups, forward lookups, brute force and SRV record enumeration.
-  **--lifetime LIFETIME**   Time to wait for a server to respond to a query. default is 3.0
-  **--tcp**                 Use TCP protocol to make queries.
-  **--db DB**            SQLite 3 file to save found records.
-  **-x XML, --xml XML**   XML file to save found records.
-  **-c CSV, --csv CSV**     Save output to a comma separated value file.
-  **-j JSON, --json JSON**  Save output to a JSON file.
-  **--iw**                   Continue brute forcing a domain even if a wildcard record is discovered.
-  **--disable_check_recursion**
-                           Disables check for recursion on name servers
-  **--disable_check_bindversion**
-                           Disables check for BIND version on name servers
-  **-V, --version**     Show DNSrecon version
-  **-v, --verbose**    Enable verbose
-  **-t TYPE, --type TYPE**  Type of enumeration to perform.
+| Option | Description |
+| --- | --- |
+| -h, --help | Show help message and exit |
+| -d DOMAIN, --domain DOMAIN | Target domain |
+| -n NS_SERVER, --name_server NS_SERVER | Domain server to use. If none is given, the SOA of the target will be used. Multiple servers can be specified using a comma separated list |
+| -r RANGE, --range RANGE | IP range for reverse lookup brute force in formats (first-last) or in (range/bitmask) |
+| -D DICTIONARY, --dictionary DICTIONARY | Dictionary file of subdomain and hostnames to use for brute force |
+| -f | Filter out of brute force domain lookup, records that resolve to the wildcard defined IP address when saving records |
+| -a | Perform AXFR with standard enumeration |
+| -s | Perform a reverse lookup of IPv4 ranges in the SPF record with standard enumeration |
+| -b | Perform Bing enumeration with standard enumeration |
+| -y | Perform Yandex enumeration with standard enumeration |
+| -k | Perform crt.sh enumeration with standard enumeration |
+| -w | Perform deep whois record analysis and reverse lookup of IP ranges found through Whois when doing a standard enumeration |
+| -z | Performs a DNSSEC zone walk with standard enumeration |
+| --threads THREADS | Number of threads to use in reverse lookups, forward lookups, brute force and SRV record enumeration |
+| --lifetime LIFETIME | Time to wait for a server to respond to a query. Default is 3.0 |
+| --tcp | Use TCP protocol to make queries |
+| --db DB | SQLite 3 file to save found records |
+| -x XML, --xml XML | XML file to save found records |
+| -c CSV, --csv CSV | Save output to a comma separated value file |
+| -j JSON, --json JSON | Save output to a JSON file |
+| --iw | Continue brute forcing a domain even if a wildcard record is discovered |
+| --disable_check_recursion | Disables check for recursion on name servers |
+| --disable_check_bindversion | Disables check for BIND version on name servers |
+| -V, --version | Show DNSrecon version |
+| -v, --verbose | Enable verbose |
+| -t TYPE, --type TYPE | Type of enumeration to perform |
+
 -   ## **Usage**
     -   Brute-force: `dnsrecon -d target.com -D wordlist.txt -t brt`
     -   DNS cache snooping: `dnsrecon -t snoop -D wordlist.txt -n 2.2.2.2` where 2.2.2.2 is the IP of the target’s NS server

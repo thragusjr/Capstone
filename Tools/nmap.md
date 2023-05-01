@@ -62,8 +62,6 @@ created: 2023-04-15 02:34:34Z
 | `--script` | Script scanning - This flag enables Nmap to execute specific scripts against the target host. | `nmap --script smb-os-discovery 192.168.1.1` |
 | `--script-args` | Script arguments - This flag enables Nmap to pass arguments to the scripts being executed. | `nmap --script smb-os-discovery --script-args=unsafe=1 192.168.1.1` |
 
-Certainly! Here is an exhaustive list of Nmap flags and their descriptions:
-
 | Flag | Description |
 |------|-------------|
 | `-6` | Enable IPv6 scanning |

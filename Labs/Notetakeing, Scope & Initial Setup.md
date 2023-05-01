@@ -1,0 +1,46 @@
+---
+title: '1. First Lab: Notetakeing, Scope & Initial Setup'
+updated: 2023-04-23 00:02:25Z
+created: 2023-04-22 22:43:05Z
+---
+- ## **Introduction
+	- Name
+	- Introductory Pentesting
+- ## Disclaimer
+	- These labs are strictly for educations purposes. These techniques are not to be used outside of this lab, or in an otherwise authorized environment.
+	- If you use these techniques in situations where you don't have permission, you could go to jail. Please don't.
+- ## Notetaking
+	- Effective notetaking is very important for this lab and pentesting in general.
+	- We will be dealing with a huge amount of information in this lab, so please find notetaking tools and techniques that work for you.
+	- Tools that I use:
+		- For quick copy and pasting, I typically have Notepad, Geany or Notepad++ open.
+		- A great notetaking tool included with Kali is CherryTree. Cherry Tree can be used for more complex notes
+			- Cherry Tree allows you to:
+				- Create "notebook" style folders called "nodes"
+				- Attack links to files, folders and images in your notes
+				- Create templates to use in future notes
+- ## The Importance of Keep Track Of, and Staying Within Scope
+	- Spreadsheet or something to keep up with what you've covered and what we still have left
+- ## Researching Vulnerabilities
+	- Vulnerability Databases and Information:
+		- [Exploit-DB / Exploits + Shellcode + GHDB · GitLab](https://gitlab.com/exploit-database/exploitdb)
+		- [Overview | CVE](https://www.cve.org/About/Overview)
+		- [Exploit Database Search](https://www.exploit-db.com/search)
+		- [CVE Security Vulnerability Database](https://www.cvedetails.com/)
+	- How To's & More
+		- [CVSS v3.1 User Guide](https://www.first.org/cvss/v3.1/user-guide)
+		- [CVSS v3.1 Examples](https://www.first.org/cvss/v3.1/examples)
+		- [National Vulnerability Database - Home](https://nvd.nist.gov/)
+- ## VM Setup
+	- Ensure your Kali Machine can connect to Metasploitable2
+	- Use ping to confirm there is no packet loss
+		- From Metasploitable2:
+			- ping <Kali_IP>
+		- From Kali terminal:
+			- ping <metasploitable2_IP>
+- ## Setting Up **Faraday**
+	- To help with reporting keeping track of our lab information, we will be using a tool called Faraday
+	- **Create Faraday Workspace**
+		- faraday -h
+		- Faraday will give you credentials to sign in to your workspace and you can go from there.
+

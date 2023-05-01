@@ -1,4 +1,3 @@
-[A Detailed Guide on Wfuzz - Hacking Articles](https://www.hackingarticles.in/a-detailed-guide-on-wfuzz/)
 
 # wFuzz Guide
 
@@ -60,3 +59,6 @@ This command will send a PUT request to `https://example.com/api`.
 wfuzz -u https://example.com -s 200
 ```
 This command will only display responses with a status code of `200`.
+
+Additional resource:
+[A Detailed Guide on Wfuzz - Hacking Articles](https://www.hackingarticles.in/a-detailed-guide-on-wfuzz/)

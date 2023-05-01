@@ -1,6 +1,6 @@
 # Working with the GUI
 
-You can start working with the GUI by typing Faraday -h in your terminal. This will provide you with credentials for your work space and you can go from there.
+You can start working with the GUI by typing Faraday -h in your terminal. Log in to your local Faraday server and refer to the information below for setup and use.
 
 - **Navigation**: 
 	- The Faraday GUI has a navigation bar on the left side of the screen that you can use to quickly access different parts of the application, such as your workspace, hosts, vulnerabilities, and reports. You can also use the search bar at the top of the screen to search for specific hosts or vulnerabilities.
